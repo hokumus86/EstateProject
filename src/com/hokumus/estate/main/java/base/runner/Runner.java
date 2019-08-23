@@ -7,8 +7,6 @@ import com.hokumus.estate.main.java.dao.member.MemberDAO;
 import com.hokumus.estate.main.java.model.Member;
 import com.hokumus.estate.main.java.model.MemberType;
 
-import javassist.compiler.MemberCodeGen;
-
 public class Runner {
 
 	public static void main(String[] args) {

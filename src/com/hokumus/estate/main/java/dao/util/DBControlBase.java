@@ -158,9 +158,6 @@ public class DBControlBase<T> implements IDBService<T> {
 					} else {
 						cr.add(Restrictions.ilike(fields[i].getName(), "%" + fields[i].get(temp) + "%"));
 					}
-
-					// fields[i].get
-					// cr.add(Restrictions.il)
 				}
 
 			}
