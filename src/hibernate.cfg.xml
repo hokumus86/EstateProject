@@ -9,9 +9,19 @@
 		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="hibernate.show_sql">true</property>
-		
-		
-		<mapping class="com.hokumus.estate.main.java.model.EmlakTuru"/>
-		
+
+
+		<mapping
+			class="com.hokumus.estate.main.java.model.EstateTypes" />
+		<mapping class="com.hokumus.estate.main.java.model.District" />
+		<mapping class="com.hokumus.estate.main.java.model.Estates" />
+		<mapping class="com.hokumus.estate.main.java.model.Member" />
+		<mapping class="com.hokumus.estate.main.java.model.Province" />
+		<mapping class="com.hokumus.estate.main.java.model.RoomType" />
+		<mapping
+			class="com.hokumus.estate.main.java.model.SpecialMemberReq" />
+		<mapping class="com.hokumus.estate.main.java.model.State" />
+		<mapping class="com.hokumus.estate.main.java.model.StateAdmin" />
+
 	</session-factory>
 </hibernate-configuration>

@@ -2,13 +2,16 @@ package com.hokumus.estate.main.java.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "member")
-public class Member extends Operations {
+public class Member extends BaseEntity {
 
 	private Long id;
 	private String username;
@@ -19,6 +22,8 @@ public class Member extends Operations {
 	private MemberType type;
 
 	@Id
+	@SequenceGenerator(name = "sq_member",sequenceName = "sq_member")
+	@GeneratedValue(generator ="sq_member",strategy = GenerationType.SEQUENCE)
 	public Long getId() {
 		return id;
 	}

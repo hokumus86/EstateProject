@@ -5,12 +5,13 @@ import java.sql.Date;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public class Operations {
+public class BaseEntity {
 	
 	private String creater;
 	private Date OpTime;
 	private String updater;
 	private String deleter;
+	
 	public String getCreater() {
 		return creater;
 	}
